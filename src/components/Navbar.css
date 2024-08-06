@@ -1,0 +1,25 @@
+
+#navbar {
+  transition: top 2s;
+  
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4; /* Ensure it's above other content */
+  background-color: #f8f9fa; /* Ensure it has a background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* 
+.custom-sticky-navbar {
+    position: -webkit-sticky;
+    position: fixed;
+    width:100%;
+    top: 0;
+    z-index: 5; 
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  } */

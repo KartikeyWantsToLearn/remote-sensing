@@ -1,0 +1,63 @@
+/* src/NewsEvents.css */
+.news-events {
+    background-color: #1161ca;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Ensure scrolling content stays within the container */
+    position: relative;
+    height: auto;
+    width:35vw; /* Adjust height as needed */
+  }
+  
+  .news-events h2 {
+    font-size: 1.5em;
+    margin: 0;
+    position: sticky; /* Keep the heading fixed */
+    top: 0; /* Stick to the top of the container */
+    background-color: #1161ca; /* Match the background color */
+    padding-bottom: 10px; /* Add padding to separate from scrolling content */
+    z-index: 1; /* Ensure heading is above scrolling content */
+  }
+  
+  .news-list {
+    position: absolute;
+    top: 40px; /* Adjust top position to make space for the heading */
+    width: 100%;
+    height: calc(100% - 40px); /* Adjust height to fit below the heading */
+    overflow: hidden;
+  }
+  
+  .news-list-content {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    animation: scrollUp 10s linear infinite;
+  }
+  
+  @keyframes scrollUp {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -100%; /* Adjust based on the total height of the news items */
+    }
+  }
+  
+  .view-all-news {
+    text-align: center;
+    font-size: 1.2em;
+    padding:5px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #76c2e6;
+    background-color: #1161ca;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+  }

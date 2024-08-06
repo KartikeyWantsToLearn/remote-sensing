@@ -1,0 +1,30 @@
+.main-container {
+    display: flex;
+    background-color: #d7e8f7;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .left-box {
+    flex: 1 1 50%;
+    max-width: 30%;
+    margin: 20px;
+    
+  }
+  
+  .left-box h2 {
+    color: #48cbe2;
+  }
+  
+  .left-box p {
+    color: #555;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+  }
+  

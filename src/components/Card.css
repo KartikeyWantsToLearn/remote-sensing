@@ -1,0 +1,29 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+    max-width: 120px;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-info {
+    padding: 10px;
+  }
+  
+  .card-info h3 {
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+  
+  .card-info p {
+    margin: 0;
+    color: #555;
+  }
+  

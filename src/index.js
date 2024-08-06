@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -16,3 +17,13 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+function updateDate() {
+  const dateContainer = document.getElementById('dateContainer');
+  const now = new Date();
+  const dateString = now.toDateString() + ' ' + now.toLocaleTimeString();
+  dateContainer.textContent = dateString;
+}
+
+setInterval(updateDate, 1000);
+updateDate();
